@@ -11,7 +11,7 @@ namespace Timereg.Api.Resolvers
         {
             _allEmployees = new List<Employee>
             {
-                new Employee() {Id = 1, Name = "Lars Aaberg", Title = "Konsulent"},
+                new Employee {Id = 1, Name = "Lars Aaberg", Title = "Konsulent"},
                 new Employee {Id = 2, Name = "Ola Normann", Title = "Dyrepasser"}
             };
         }

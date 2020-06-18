@@ -1,12 +1,14 @@
 ﻿using System;
 using HotChocolate;
+using NUnit.Framework;
 using Timereg.Api.Resolvers;
 
-namespace Timereg.Api.CLI
+namespace Timereg.Api.Tests
 {
-    internal static class Program
+    public class SchemaTest
     {
-        private static void Main(string[] args)
+        [Test]
+        public void TestGenerateSchema()
         {
             var schema = SchemaBuilder.New()
                 .AddQueryType<Query>()
@@ -14,7 +16,6 @@ namespace Timereg.Api.CLI
                 .Create();
             
             Console.WriteLine(schema.ToString());
-            
         }
     }
 }
